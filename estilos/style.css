@@ -44,3 +44,23 @@ iframe#tela{
         height: 472px;
         width: 267px;
 }
+section#redes-sociais{
+
+    text-align: right; /*joguei os icones para direita*/
+}
+
+section#redes-sociais img{ /*as imagens dentro do section id redes sociasi vao alterar*/
+    width: 50px;
+    margin: 10px;
+    
+    border-radius: 100%;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.575); /*sombna nos icons*/
+    box-sizing: border-box; /*botei a borda diretamente no icon*/
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid white;
+    transform: translate(-7px, -7px); /*fiz os icons da redes socias mexer para cima e para esquerda quando passar o mouse*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
+    transition: transform 0.5s, border 1s; /*usei para diminuir velocidade que mexe o transform*/
+}
