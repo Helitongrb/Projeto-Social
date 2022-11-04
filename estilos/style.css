@@ -1,0 +1,46 @@
+@charset "UTF-8"
+
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+html. body{
+    height: 100vh; /*vh = viewport height ( altura total do navegador)*/
+    width: 100vw; /*vh = viewport width ( largura total do navegador)*/
+    background-color: black;
+}
+
+body{
+    background: url(../IMAGENS/fundo.jpg) no-repeat top center; /*botei para nao repetir e alinhei*/
+    background-size: cover; /*usei para cobrir a tela inteira*/
+    background-attachment: fixed; /*fixei na tela*/
+}
+
+main{
+    height: 100vh;
+    position: relative; /* é usado quando queremos alterar a posição de um elemento tendo como referência a posição inicial dele.*/
+
+}
+
+section#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*permite mexer o elemento na vertical ou horizontal*/
+    
+ 
+    height: 627px;
+    width: 311px;
+    background:  url(../IMAGENS/frame-iphone.png) no-repeat; /*../ faz com q volte 1 pasta*/
+}
+
+iframe#tela{
+        position: relative;
+        top: 80px;
+        left: 22px;
+
+        height: 472px;
+        width: 267px;
+}
